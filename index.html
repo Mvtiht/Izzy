@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Te amo Issabella</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="petals" id="petals"></div>
+
+<div class="page">
+
+  <header>
+    <div class="titulo">Para mi princesa <span class="heart">♡</span></div>
+    <div class="music-player" id="musicPlayer">
+      <div class="music-note">
+        <svg viewBox="0 0 24 24"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>
+        <span class="song-name">For All Time</span>
+      </div>
+      <button class="play-btn" id="playBtn" aria-label="Reproducir">
+        <svg id="iconPlay" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="iconPause" viewBox="0 0 24 24" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+    </div>
+    <audio id="audio" src="assets/For All Time - Michael Jackson.flac" loop></audio>
+  </header>
+
+  <div class="counter" id="counter">
+    <span class="counter-number" id="counterDays">--</span>
+    <span class="counter-label">días juntos ♡</span>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card" id="card">
+      <div class="quote-mark">&ldquo;</div>
+      <h2>Mi niña:</h2>
+      <p>Hoy cumplimos 2 meses juntos y quisiera decirte cuánto te amo y lo feliz que me siento de tenerte. Eres una gran persona que se ha vuelto muy importante para mí.</p>
+      <p>Gracias por soportarme cuando te 'saco pica', porque como sabes yo siempre gano jsjsjsjsj. También por soportar mi humor o lo intenso que puedo ser pidiendo un beso tuyo.</p>
+      <p>Quiero que sepas que tienes todo mi apoyo en lo que quieras hacer. Tal vez este año aún no estudiarás, pero cuando lo hagas estaré para ti, para darte mi apoyo y mi amor, y hacerte saber lo grandiosa que eres y que tú puedes con todo lo que venga en tu camino.</p>
+      <p>También quería decirte que te admiro como persona. Ya te lo he dicho antes, pero eres muy amable con todos, no solo conmigo. Eres alguien muy empática y comprensiva con los demás, y también eres muy guapa jsjsjs. Te amu.</p>
+      <p class="firma">Te amo linda. ♡</p>
+
+      <svg class="flower" viewBox="0 0 170 260" xmlns="http://www.w3.org/2000/svg">
+        <line x1="150" y1="20" x2="60" y2="250" stroke="#c9917d" stroke-width="2"/>
+        <line x1="150" y1="20" x2="90" y2="70" stroke="#c9917d" stroke-width="1.5"/>
+        <line x1="150" y1="20" x2="120" y2="60" stroke="#c9917d" stroke-width="1.5"/>
+        <g fill="#f4b8c6">
+          <circle cx="90" cy="65" r="5"/><circle cx="98" cy="58" r="5"/><circle cx="82" cy="58" r="5"/><circle cx="90" cy="52" r="5"/>
+        </g>
+        <g fill="#f7cfd9">
+          <circle cx="120" cy="55" r="5"/><circle cx="128" cy="48" r="5"/><circle cx="112" cy="48" r="5"/><circle cx="120" cy="42" r="5"/>
+        </g>
+        <g fill="#f4b8c6">
+          <circle cx="145" cy="15" r="6"/><circle cx="155" cy="8" r="6"/><circle cx="136" cy="8" r="6"/><circle cx="145" cy="0" r="6"/>
+        </g>
+        <rect x="35" y="185" width="65" height="30" rx="3" fill="#f9dbe4" opacity="0.85" transform="rotate(-18 67 200)"/>
+      </svg>
+    </div>
+
+    <div class="dots">
+      <button class="dot active" data-i="0"></button>
+      <button class="dot" data-i="1"></button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
